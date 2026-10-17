@@ -52,7 +52,7 @@ function renderNav(){
 function home(){
   return `
   <section class="hero" style="background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.6)),url('img/hero.png')"><div class="wrap">
-    <p class="tag">Maputo · Moçambique</p>
+    <p class="tag">Two five eigth</p>
     <h1>Charutos selecionados, para quem não tem pressa.</h1>
     <a class="link" href="#/catalogo" onclick="pick('Todos')">Ver coleção →</a>
   </div></section>
