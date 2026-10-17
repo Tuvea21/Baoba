@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Casa Baobá — Charutos &amp; Tabacos · Maputo</title>
-  <meta name="description" content="Charutos, cachimbos e acessórios de tabacaria, de Maputo para o mundo.">
+  <title>Baobá — Charutos &amp; Tabacos · Maputo</title>
+  <meta name="description" content="Charutos selecionados e acessórios de tabacaria, de Maputo para o mundo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Verificação de idade -->
   <div id="age" role="dialog" aria-modal="true" aria-labelledby="age-t">
     <div class="age-box">
-      <span class="logo-t">Casa Baobá</span>
+      <span class="wordmark">BAOBÁ</span>
       <h2 id="age-t">Tem 18 anos ou mais?</h2>
       <p class="mut">Os produtos de tabaco destinam-se exclusivamente a maiores de idade.</p>
       <div class="row gap center">
@@ -24,49 +23,33 @@
     </div>
   </div>
 
-  <!-- Barra superior -->
-  <div class="strip-top"><div class="wrap">
-    <span>Olá, seja bem-vindo(a)!</span>
-    <a href="https://wa.me/258840000000" target="_blank" rel="noopener">💬 Atendimento ao cliente: +258 84 000 0000</a>
-    <a href="#/conta">🚚 Rastrear minha compra</a>
-  </div></div>
-
-  <!-- Cabeçalho -->
-  <header class="head"><div class="wrap head-in">
-    <a class="logo" href="#/" aria-label="Casa Baobá — início">
-      <span class="crest">CB</span>
-      <span><b>CASA BAOBÁ</b><small>CHARUTOS &amp; TABACOS</small></span>
-    </a>
-    <form class="search" id="sf" role="search">
-      <input id="q" type="search" placeholder="O que procura hoje?" aria-label="Pesquisar">
-      <button type="submit" aria-label="Pesquisar">🔍</button>
-    </form>
-    <div class="acts">
-      <a href="#/contactos"><i>❓</i>Precisa de ajuda?</a>
-      <a href="#/conta"><i>👤</i>Minha conta</a>
-      <button id="cart-btn"><i>🛒<span id="cc">0</span></i>Meu carrinho</button>
+  <header class="head">
+    <div class="wrap bar">
+      <a class="logo" href="#/"><span class="wordmark">BAOBÁ</span><small>Charutos &amp; Tabacos</small></a>
+      <nav id="nav" aria-label="Principal"></nav>
+      <div class="tools">
+        <button id="sb-btn">Pesquisar</button>
+        <a href="#/conta" class="hide-m">Conta</a>
+        <button id="cart-btn">Carrinho (<span id="cc">0</span>)</button>
+        <button id="burger" class="burger" aria-label="Menu">Menu</button>
+      </div>
     </div>
-  </div></header>
-
-  <!-- Categorias -->
-  <nav class="cats" id="cats" aria-label="Categorias"></nav>
+    <form id="sbar" class="sbar" hidden><div class="wrap"><input id="q" type="search" placeholder="Pesquisar produtos…" aria-label="Pesquisar"></div></form>
+  </header>
 
   <main id="app"></main>
 
   <footer class="foot">
     <div class="wrap foot-in">
-      <div><b class="logo-t">Casa Baobá</b><p>Maputo, Moçambique<br>loja@casabaoba.example</p></div>
-      <div><b>Institucional</b><a href="#/sobre">Sobre nós</a><a href="#/contactos">Contactos</a><a href="#/conta">Rastrear compra</a><a href="#/admin">Administração</a></div>
-      <div><b>Aviso</b><p>Venda exclusiva a maiores de 18 anos. O envio internacional está sujeito às leis do país de destino. Fumar prejudica gravemente a saúde.</p></div>
+      <div><span class="wordmark">BAOBÁ</span><p class="mut small">Maputo, Moçambique<br>loja@baoba.example · WhatsApp +258 84 000 0000</p></div>
+      <div class="foot-l"><a href="#/sobre">Sobre</a><a href="#/contactos">Contactos</a><a href="#/conta">Rastrear compra</a><a href="#/admin">Administração</a></div>
     </div>
+    <p class="wrap mut small legal">Venda exclusiva a maiores de 18 anos. O envio internacional está sujeito às leis do país de destino. Fumar prejudica gravemente a saúde.</p>
   </footer>
 
-  <a class="wa" href="https://wa.me/258840000000" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-
-  <!-- Carrinho lateral -->
   <div id="ov"></div>
   <aside id="drawer" aria-label="Carrinho">
-    <div class="d-h"><h3>O seu carrinho</h3><button class="icon" id="close-cart" aria-label="Fechar">✕</button></div>
+    <div class="d-h"><h3>Carrinho</h3><button id="close-cart" class="link" aria-label="Fechar">Fechar ✕</button></div>
     <div id="d-body"></div>
   </aside>
 
