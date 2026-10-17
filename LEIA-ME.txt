@@ -1,0 +1,24 @@
+FOTOGRAFIAS DA LOJA
+Coloca aqui as tuas fotos com EXACTAMENTE estes nomes (formato .jpg).
+Enquanto uma foto não existir, o site mostra um bloco neutro no lugar dela.
+
+hero.jpg              Banner da página inicial (horizontal, ~1920x1100)
+sobre.jpg             Foto da secção "Sobre" na página inicial (~1000x1250)
+robusto-maputo.jpg    Produtos (vertical 4:5, ~800x1000)
+corona-indico.jpg
+torpedo-reserva.jpg
+lonsdale-selecta.jpg
+humidor-cedro.jpg
+cortador-duplo.jpg
+isqueiro-triplo.jpg
+cinzeiro-ceramica.jpg
+cigarrilha-baunilha.jpg
+cigarrilha-classica.jpg
+cachimbo-classico.jpg
+kit-iniciacao.jpg
+
+Dicas:
+- O melhor são fotos tuas dos produtos reais (fundo neutro, boa luz).
+- Bancos gratuitos (confirma sempre a licença): unsplash.com, pexels.com
+- Comprime cada imagem para menos de 200 KB (ex.: squoosh.app) para o site abrir rápido.
+- Para usar outro nome ou formato, altera o campo "img" em js/data.js.
