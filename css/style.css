@@ -39,13 +39,9 @@ button{font:inherit;color:inherit;cursor:pointer}
 #nav{display:flex;gap:clamp(1rem,2.5vw,2.2rem)}
 #nav a{font-size:.85rem;letter-spacing:.06em;color:var(--mut);padding:.3rem 0;border-bottom:1px solid transparent;transition:.2s}
 #nav a:hover,#nav a.on{color:var(--ink);border-color:var(--ink)}
-.tools{display:flex;justify-content:flex-end;align-items:center;gap:.3rem;font-size:.85rem}
+.tools{display:flex;justify-content:flex-end;gap:1.4rem;font-size:.85rem}
 .tools button,.tools a{background:none;border:0;padding:0;color:var(--ink)}
 .tools button:hover,.tools a:hover{color:var(--accent)}
-.ib{display:grid;place-items:center;width:40px;height:40px;position:relative}
-.ico{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-#cc{position:absolute;top:3px;right:1px;min-width:16px;height:16px;padding:0 4px;border-radius:99px;background:var(--accent);color:#fff;font-size:.65rem;line-height:16px;text-align:center}
-#cc[hidden]{display:none}
 .burger{display:none}
 .sbar{border-top:1px solid var(--line);padding:.8rem 0}
 .sbar[hidden]{display:none}
@@ -153,5 +149,6 @@ body.cart-open #ov{opacity:1;pointer-events:auto}
 @media (max-width:520px){
   .grid{grid-template-columns:1fr 1fr;gap:1.6rem 1rem}
   .pc h3{font-size:1.05rem}.pc .pi{flex-direction:column;gap:0}
+  .tools{gap:1rem}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}.reveal{opacity:1;transform:none}}
