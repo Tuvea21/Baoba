@@ -51,8 +51,8 @@ function renderNav(){
 // ---------- Páginas ----------
 function home(){
   return `
-  <section class="hero" style="background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.6)),url('img/hero.jpg')"><div class="wrap">
-    <p class="tag">Maputo · Moçambique</p>
+  <section class="hero" style="background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.6)),url('img/front2.png')"><div class="wrap">
+    <p class="tag">Two five eigth</p>
     <h1>Charutos selecionados, para quem não tem pressa.</h1>
     <a class="link" href="#/catalogo" onclick="pick('Todos')">Ver coleção →</a>
   </div></section>
@@ -177,7 +177,7 @@ function chg(id, d){
 }
 function saveCart(){ store.set("cb_cart", cart); renderCart(); if (location.hash === "#/checkout") route(); }
 function renderCart(){
-  const n = count(); $("#cc").textContent = n; $("#cc").hidden = !n;
+  $("#cc").textContent = count();
   const l = items();
   $("#d-body").innerHTML = l.length
     ? l.map(({ p, q }) => `<div class="li"><div><b>${esc(p.name)}</b><div class="mut small">${mzn(p.price)}</div><div class="qty"><button onclick="chg(${p.id},-1)">−</button><span>${q}</span><button onclick="chg(${p.id},1)">+</button></div></div><span>${mzn(p.price * q)}</span></div>`).join("")
