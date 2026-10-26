@@ -51,7 +51,7 @@ function renderNav(){
 // ---------- Páginas ----------
 function home(){
   return `
-  <section class="hero" style="background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.6)),url('img/front2.png')"><div class="wrap">
+  <section class="hero" style="background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.6)),url('img/front3.png')"><div class="wrap">
     <p class="tag">Maputo · Moçambique</p>
     <h1>Charutos selecionados, para quem não tem pressa.</h1>
     <a class="link" href="#/catalogo" onclick="pick('Todos')">Ver coleção →</a>
